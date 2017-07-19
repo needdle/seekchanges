@@ -13,3 +13,5 @@ lambda (recommended value = 0.1) is the dirichlet smoothing parameter.
 
 3. Find output.xls in the experiment_dir for the evaluation result.
 
+The datasets are to be uploaded...
+
