@@ -222,12 +222,12 @@ public class SeekChanges {
 				FileUtils.write_append2file(pair.getKey()+" "+oneLogName+" "+"VSM"+" "+runningTime+"\n", timestatsFilePath);
 			}
 		}
-		String resultDirPath = Paths.get(experimentDirPath,"evalResult_package").toString();
+		String resultDirPath = Paths.get(experimentDirPath,"evalResult").toString();
 		
 //		String resultDirPath=Paths.get(rootDirPath, "experimentResult","evalResult_package").toString();
 		FileEvaluate.evaluateDir(evaluationDirPath, 10, resultDirPath);
 		
-		String outputExcelPath = Paths.get(experimentDirPath, "output_package.xls").toString();
+		String outputExcelPath = Paths.get(experimentDirPath, "output.xls").toString();
 //		String outputExcelPath=Paths.get(rootDirPath, "experimentResult","output_package.xls").toString();
 		FileEvaluate.exportEvaluationResult2Excel(resultDirPath, outputExcelPath);
 	}
